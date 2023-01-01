@@ -1,0 +1,33 @@
+.result, .emi-box, .toIpayable, .total-payment{
+    border: 0.2rem dashed var(--Primary);
+    display: flex;
+    width: 49%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+    text-align: center;
+}
+
+.result{
+    /* display: table; */
+    align-self: normal;
+}
+
+.emi-box, .toIpayable, .total-payment{
+   width: unset;
+   border: unset;
+   padding: 1rem 0rem;
+   /* gap: 0.5rem; */
+}
+
+.tpTitle, .tipTitle, .EMiTitle{
+    font-size: 1.8rem;
+}
+.tpNum, .tipNum, .emiNum{
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+.icon-tp, .icon-tip, .icon-emi{
+    font-size: 1.8rem;
+}

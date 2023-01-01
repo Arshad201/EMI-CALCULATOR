@@ -1,0 +1,144 @@
+
+
+.form-group {
+  width: 97%;
+  margin: 1.5rem auto 5rem auto;
+}
+.txtWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* border: 1px solid red; */
+  padding: 1rem 0rem;
+  gap: 2rem;
+}
+.inputLabels {
+  font-size: 1.7rem;
+}
+.inputBox {
+  font-size: 1.5rem;
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.inputBox input{
+  width: 100%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.txtInputs::-webkit-outer-spin-button,
+.txtInputs::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.txtInputs {
+  -moz-appearance: textfield; /* Firefox */
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding: 1rem 0.5rem;
+  height: 100%;
+  border: 0.1rem solid rgb(154, 154, 154);
+}
+.txtInputs:focus {
+  outline: none;
+  border-color: var(--Primary);
+}
+.inputIcon {
+  align-self: center;
+  width: 30;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0rem 1rem;
+  border: 0.1rem solid rgb(154, 154, 154);
+  border-left: 0rem;
+}
+
+.rangeWrapper{
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.rangeInputBox{
+    width: 100%;
+}
+
+
+.range{
+  width: 100%;
+  background-color: transparent;
+  -webkit-appearance: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+.range::-moz-range-progress{
+  background-color:var(--Primary);
+  padding: 0px;
+  height: 0.8rem;
+  border-radius: 100px;
+}
+.range::-moz-range-thumb{
+  background-color: var(--Primary);
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border-color: var(--Primary);
+}
+.range::-moz-range-track{
+  height:0.7rem;
+  background-color: #CCCCCC;
+  border-radius: 20px;
+}
+
+.range::-webkit-slider-runnable-track{
+  height:0.7rem;
+  background-color: #CCCCCC;
+  border-radius: 20px;
+}
+.range::-webkit-slider-thumb{
+  appearance: none;
+  width: 2rem;
+  background-color: var(--Primary);
+  height: 2rem;
+  margin-top: -7.5px;
+  border-radius: 50%;
+}
+
+.rangeScale{
+  /* border: 1px solid red; */
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: -9px auto 0rem auto;
+  z-index: 1;
+}
+.scaleLine{
+  height: 15px;
+  border: 1px solid var(--Primary);
+  position: relative;
+}
+.scaleText{
+  position: absolute;
+  top: 16px;
+  right: -4px;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+.scaleText-2,
+.scaleText-3,
+.scaleText-4{
+  right: -11px;
+}
+
+.scaleText-5,
+.scaleText-6,
+.scaleText-7,
+.scaleText-8,
+.scaleText-9{
+  right: -13px;
+}

@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+    --Primary: rgb(255, 78, 2);
+    --white: #fff;
+    --black: #000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--white);
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.Wrapper {
+    /* border: 0.3rem dashed var(--Primary); */
+    width: 80%;
+    margin: 1.5rem auto;
+    padding: 1.5rem 0rem;
+    background-color: rgb(238, 238, 238);
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .box {
+    width: 97%;
+    margin: 0rem auto;
+    padding: 2rem;
+    border: 0.2rem solid black;
   }
-  to {
-    transform: rotate(360deg);
+
+  .flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-}
+  
+
+@media only screen and (max-width: 950px) {
+      html{
+          font-size: 58%;
+      }
+    .Wrapper, nav{
+        width: 95%;
+    }
+    .logo{
+        font-size: 2.5rem;
+    }
+    .link{
+        margin: 0rem 0.8rem;
+    }
+  }
+
+
+  @media only screen and (max-width: 700px) {
+    .nav-wrapper{
+        display: none;
+    }
+    .menu-icon{
+        display: flex;
+        cursor: pointer;
+        font-size: 3rem;
+    }
+    .switch-wrapper{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    div.rangeScale :nth-child(2),
+    div.rangeScale :nth-child(4),
+    div.rangeScale :nth-child(6),
+    div.rangeScale :nth-child(8){
+        display: none;
+    }
+    .flex-container{
+        flex-direction: column;
+    }
+    .result{
+        width: 100% !important;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    div.rangeScale :nth-child(3),
+    div.rangeScale :nth-child(7),
+    div.rangeScale :nth-child(6),
+    div.rangeScale :nth-child(8){
+        display: none;
+    }
+  }
