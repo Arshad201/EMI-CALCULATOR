@@ -48,7 +48,7 @@ export default function Navbar(props) {
             </span>
           </div>
         </div>
-        <div className="menu-icon" onClick={toggleView} style={props.txtColor}>
+        <div className="menu-icon" onClick={toggleView}>
           {view===false?<RiBarChartHorizontalFill />:<FaTimes/>}
           
         </div>
@@ -78,7 +78,7 @@ export default function Navbar(props) {
           <li className="link-wrapper">
             <div className="mb-switch-wrapper" onClick={props.toggleMode}>
               <div className="switch-box">
-                <span className="switch-btn" style={props.txtColor}>
+                <span className="switch-btn" >
                   {props.mode === false ? <BsSunFill /> : <MdModeNight />}
                 </span>
               </div>
