@@ -78,7 +78,7 @@ export default function Navbar(props) {
           <li className="link-wrapper">
             <div className="mb-switch-wrapper" onClick={props.toggleMode}>
               <div className="switch-box">
-                <span className="switch-btn">
+                <span className="switch-btn" style={props.txtColor}>
                   {props.mode === false ? <BsSunFill /> : <MdModeNight />}
                 </span>
               </div>
