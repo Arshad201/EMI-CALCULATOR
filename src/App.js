@@ -126,6 +126,7 @@ function App() {
 
   return (
     <>
+    checking
       <Navbar toggleMode={toggleMode} mode={mode} txtColor={{color:modeColor.color}} bgColor={{backgroundColor:modeColor.backgroundColor, borderColor:modeColor.borderColor}}/>
       <Form myLa={myLa} LA={LA} myIR={myIR} IR={IR} myLT={myLT} LT={LT} styleElm={{backgroundColor:modeColor.backgroundColor, color:modeColor.color}}/>
       <Result emi={EMI.toLocaleString('en-IN')} tip={TIP.toLocaleString('en-IN')} ta={TA.toLocaleString('en-IN')} data={data} option={option} styleElm={{backgroundColor:modeColor.backgroundColor, color:modeColor.color}}/>
