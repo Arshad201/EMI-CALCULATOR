@@ -48,7 +48,7 @@ export default function Navbar(props) {
             </span>
           </div>
         </div>
-        <div className="menu-icon" onClick={toggleView}>
+        <div className="menu-icon" onClick={toggleView} style={props.txtColor}>
           {view===false?<RiBarChartHorizontalFill />:<FaTimes/>}
           
         </div>
