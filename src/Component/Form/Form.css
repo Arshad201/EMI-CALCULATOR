@@ -142,3 +142,26 @@
 .scaleText-9{
   right: -13px;
 }
+
+@media only screen and (max-width : 1000px){
+  .rangeScale{
+    width: 97%;
+  }
+}
+
+@media only screen and (max-width : 600px){
+  .rangeScale{
+    width: 96%;
+  }
+}
+@media only screen and (max-width : 500px){
+  .rangeScale{
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width : 400px){
+  .rangeScale{
+    width: 94%;
+  }
+}

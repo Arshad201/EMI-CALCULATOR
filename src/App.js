@@ -6,12 +6,12 @@ import Result from './Component/Result/Result';
 
 function App() {
 
-  let [LA, setLA] = useState(0);
-  let [IR, setIR] = useState(5);
-  let [LT, setLT] = useState(1);
-  let [mode, setMode] = useState(false);
+  const [LA, setLA] = useState(0);
+  const [IR, setIR] = useState(5);
+  const [LT, setLT] = useState(1);
+  const [mode, setMode] = useState(false);
 
-  let toggleMode = () => {
+  const toggleMode = () => {
     setMode(!mode);
   };
 
@@ -33,40 +33,39 @@ function App() {
   }
 
 
-  let myLa = (e) => {
+  const myLa = (e) => {
     setLA(e.target.value);
 
   }
 
-  let myIR = (e) => {
+  const myIR = (e) => {
     setIR(e.target.value);
   }
-  let myLT = (e) => {
+  const myLT = (e) => {
     setLT(e.target.value);
   }
 
 
 
-  let monthlyRate = IR / (12 * 100);
-  let timeInMonth = LT < 1 ? 1 * 12 : LT * 12;
-  let onePlusR = (1 + monthlyRate) ** timeInMonth;
-  let denominator = onePlusR - 1;
-  let rawEMI = LA * monthlyRate * onePlusR / denominator;
-  let EMI = Math.trunc(rawEMI);
+  const monthlyRate = IR / (12 * 100);
+  const timeInMonth = LT < 1 ? 1 * 12 : LT * 12;
+  const onePlusR = (1 + monthlyRate) ** timeInMonth;
+  const denominator = onePlusR - 1;
+  const rawEMI = LA * monthlyRate * onePlusR / denominator;
+  const EMI = Math.ceil(rawEMI);
 
-  let rawTA = rawEMI * timeInMonth;
-  let TA = Math.round(rawTA);
+  const rawTA = rawEMI * timeInMonth;
+  const TA = Math.ceil(rawTA);
 
-  let TIPraw = rawTA - LA;
-  let TIP = Math.trunc(TIPraw);
+  const TIPraw = rawTA - LA;
+  const TIP = Math.trunc(TIPraw);
 
-  let rawTIinPercentage = (TIPraw/rawTA)*100;
-  let TIinPercentage = rawTIinPercentage.toFixed(1);
-  let principleOfLA = (100-rawTIinPercentage).toFixed(1);
-  // console.log(TIinPercentage);
-  // console.log(principleOfLA);
+  const rawTIinPercentage = (TIPraw/rawTA)*100;
+  const TIinPercentage = rawTIinPercentage.toFixed(1);
+  const principleOfLA = (100-rawTIinPercentage).toFixed(1);
+ 
 
-  let data = {
+  const data = {
     labels: ['Total Interest', 'Principle Loan Amount'],
     datasets: [
       {
@@ -84,7 +83,7 @@ function App() {
       },
     ],
   }
-  let option = {
+  const option = {
     plugins: {
       title: {
         display: true,
