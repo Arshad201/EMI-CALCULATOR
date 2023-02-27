@@ -6,9 +6,9 @@ import Result from './Component/Result/Result';
 
 function App() {
 
-  const [LA, setLA] = useState(0);
+  const [LA, setLA] = useState(10000000);
   const [IR, setIR] = useState(5);
-  const [LT, setLT] = useState(1);
+  const [LT, setLT] = useState(12);
   const [mode, setMode] = useState(false);
 
   const toggleMode = () => {
