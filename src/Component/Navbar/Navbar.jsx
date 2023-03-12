@@ -16,27 +16,22 @@ export default function Navbar(props) {
   return (
     <>
       <nav style={props.bgColor}>
-        <a href="/" className="logo" style={props.txtColor}>
+        <a href="https://arshad201.github.io/emi-calculator/" className="logo" style={props.txtColor}>
           EMI-Cal++
         </a>
         <ul className="nav-wrapper" >
           <li className="link-wrapper" >
-            <a href="/" className="link active-link" style={props.txtColor}>
+            <a href="https://arshad201.github.io/emi-calculator/" className="link active-link" style={props.txtColor}>
               Calculator
             </a>
           </li>
           <li className="link-wrapper">
-            <a href="/" className="link" style={props.txtColor}>
+            <a href="https://arshad201.github.io/emi-calculator/" className="link" style={props.txtColor}>
               About
             </a>
           </li>
           <li className="link-wrapper">
-            <a href="/" className="link" style={props.txtColor}>
-              Our Products
-            </a>
-          </li>
-          <li className="link-wrapper">
-            <a href="/" className="link" style={props.txtColor}>
+            <a href="https://arshad201.github.io/emi-calculator/" className="link" style={props.txtColor}>
               Contact
             </a>
           </li>
@@ -56,22 +51,17 @@ export default function Navbar(props) {
       <div className="mobile-menu" style={view===false?{display:'none'}:{display:'block'}}>
         <ul className="mb-nav-wrapper">
           <li className="link-wrapper">
-            <a href="/" className="link active-link">
+            <a href="https://arshad201.github.io/emi-calculator/" className="link active-link">
               Calculator
             </a>
           </li>
           <li className="link-wrapper">
-            <a href="/" className="link">
+            <a href="https://arshad201.github.io/emi-calculator/" className="link">
               About
             </a>
           </li>
           <li className="link-wrapper">
-            <a href="/" className="link">
-              Our Products
-            </a>
-          </li>
-          <li className="link-wrapper">
-            <a href="/" className="link">
+            <a href="https://arshad201.github.io/emi-calculator/" className="link">
               Contact
             </a>
           </li>
