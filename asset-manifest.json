@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/emi-calculator/static/css/main.9589b696.css",
-    "main.js": "/emi-calculator/static/js/main.6c2b959b.js",
+    "main.js": "/emi-calculator/static/js/main.696bc241.js",
     "index.html": "/emi-calculator/index.html",
     "main.9589b696.css.map": "/emi-calculator/static/css/main.9589b696.css.map",
-    "main.6c2b959b.js.map": "/emi-calculator/static/js/main.6c2b959b.js.map"
+    "main.696bc241.js.map": "/emi-calculator/static/js/main.696bc241.js.map"
   },
   "entrypoints": [
     "static/css/main.9589b696.css",
-    "static/js/main.6c2b959b.js"
+    "static/js/main.696bc241.js"
   ]
 }
